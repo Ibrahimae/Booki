@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 
-/* "*" = pour tout  */
 
+/*Barre de navigation*/
 * {
     box-sizing: border-box;
     font-family: "Raleway";
@@ -15,7 +15,7 @@ a {
 
 
 nav {
-    border: 1px solid red;
+
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -23,7 +23,7 @@ nav {
 }
 
 nav a {
-    padding: 67px;
+    padding: 44px 55px;
 }
 
 #haut:hover {
@@ -32,5 +32,244 @@ nav a {
 
 #logo {
     margin-right: auto;
-    padding: 0 2rem;
+    padding: 0 55px;
+    height: 30px;
+}
+
+/*Debut H1 et bouton recherche*/
+h1 {
+    margin-bottom: -8px;
+}
+
+.Wrap p {
+    margin-bottom: 20px;
+}
+
+.Wrap {
+    padding: 0 55px;
+}
+
+.Forme {
+    display: flex;
+    margin-bottom: 46px;
+
+}
+
+.Forme i {
+    padding: 15px 1rem;
+    background-color: #F2F2F2;
+    border-radius: 1rem 0rem 0rem 1rem;
+}
+
+.Forme input {
+
+    padding-right: 3rem;
+    border: 1px solid #F2F2F2;
+}
+
+.Forme input::placeholder {
+    color: black;
+    font-weight: bold;
+    padding: 1rem;
+}
+
+.Forme button {
+    background-color: #0065FC;
+    padding: 1rem;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 0rem 1REM 1REM 0;
+    border: none;
+}
+
+.styled {
+    border: 0;
+    line-height: 1;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: rgba(220, 0, 0, 1);
+    background-image: linear-gradient(to top left,
+            rgba(0, 0, 0, .2),
+            rgba(0, 0, 0, .2) 30%,
+            rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+        inset -2px -2px 3px rgba(0, 0, 0, .6);
+
+}
+
+.styled:hover {
+    background-color: rgb(55, 55, 255);
+}
+
+.styled:active {
+    box-shadow: inset -2px -2px 3px blue,
+        inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
+
+/*Filtres*/
+
+.filter-list {
+    display: flex;
+    padding: 0 62px;
+    margin-bottom: 54px;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.filter-list .fas {
+    padding: 1rem;
+    color: #0065FC;
+}
+
+.message-info .fas {
+    padding: 1rem;
+    color: #0065FC;
+}
+
+.filter {
+    border: 2px solid lightgray;
+    border-radius: 2rem;
+    font-weight: bold;
+    padding: 0px 12px 0PX 0PX;
+
+}
+
+.filter:hover {
+    background-color: #DEEBFF;
+}
+
+/*info*/
+
+.message-info {
+    display: flex;
+    align-items: center;
+    padding: 0 59px;
+    gap: 1REM;
+}
+
+.message-info .fas {
+    display: flex;
+    border: 1PX solid lightgray;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+/*bloc1 Appartement*/
+
+.bloc-appartement {
+    display: flex;
+    gap: 40PX;
+    padding: 0 55px;
+}
+
+.bloc-appartement div {
+
+    background-color: lightgray;
+    border-radius: 2rem;
+}
+
+.hebergement {
+    flex-basis: 66%;
+
+}
+
+.populaire {
+    flex-basis: 33%;
+}
+
+.hebergement a {
+    font-weight: bold;
+}
+
+
+.Liste-appart {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 1rem;
+    /*  gap: 31px; Probleme*/
+}
+
+.Liste-appart div {
+    flex-basis: 33%;
+
+}
+
+/*bloc2 Populaire*/
+
+.bloc-appartement .populaire {
+    display: flex;
+    flex-direction: column;
+    gap: 49px;
+}
+
+.bloc-appartement .populaire div {
+    display: flex;
+
+
+}
+
+/* Carte appartement*/
+
+.carte-appart {
+    background-color: white;
+    border-radius: 20px 20px 0 0;
+    padding: 0.5rem;
+
+}
+
+.carte-appart img {
+    border-radius: 20px 20px 0 0;
+    height: 124px;
+    width: 246px;
+    padding: 5px 5px;
+}
+
+/* Carte Populaire*/
+
+.populaire-flex {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.carte-populaire {
+    background-color: white;
+    display: flex;
+    padding: 33px;
+
+}
+
+.carte-populaire img {
+    height: 144px;
+    width: 137PX;
+}
+
+.description-populaire {
+    display: flex;
+    flex-basis: 100%;
+    flex-direction: column;
+}
+
+/*Liste activité marseille*/
+
+.liste-activité {
+    border: 2PX solid red;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 1rem;
+    ;
+}
+
+.vieuxport {
+    grid-row: span 4;
 }
